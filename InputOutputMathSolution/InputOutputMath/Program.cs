@@ -6,10 +6,10 @@ namespace InputOutputMath
     {
         static void Main(string[] args)
         {
-            //*Implement a temperature convertor from
-            *Celsius to fahrenheit;
+            /*Implement a temperature convertor from
+            * Celsius to fahrenheit
             *
-            *Jan21
+            * Jan 2021
             */
          
 
@@ -49,7 +49,7 @@ namespace InputOutputMath
 
             //currently the celsius value is a string
             //the value needs to be converted to a number to be
-            //       used in a math calcualtion
+            //       used in a math calculation
             //convert the data to a different datatype
             //to do this; you will use technique called parsing
             // syntax: datatypeTo.Parse(string value)
@@ -60,13 +60,15 @@ namespace InputOutputMath
            
             double theCelsiustemperature = double.Parse(inputTemp);
 
-            //calcualtion using the conversion expression
+            //calculation using the conversion expression
             double theFahrenheitTemperature =
                               (theCelsiustemperature * (9.0 / 5.0)) + 32;
 
             //output
-            // .Writeline() which automaticaly foes to the next line.
-            Console.WriteLine($"The Celsius temperature of the {theCelsiustemperature} is ");
+            // .Writeline() which automaticaly goes to the next line.
+            Console.WriteLine($"The Celsius temperature of the {theCelsiustemperature} is " +
+                $"{theFahrenheitTemperature} in fahrenheit.");
+               
 
         }
     }
